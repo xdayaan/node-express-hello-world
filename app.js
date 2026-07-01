@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/',routes.home);
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT;
 
 var server=app.listen(port,function(req,res){
     console.log("Catch the action at http://localhost:"+port);
